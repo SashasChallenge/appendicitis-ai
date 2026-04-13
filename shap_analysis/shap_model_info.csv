@@ -1,2 +1,0 @@
-﻿Best_Model,External_AUC,Explainer_Type,N_Samples,N_Features,Base_Value,Selection_Basis
-Logistic Regression,0.8238,KernelExplainer,150,20,0.426035393959542,External Validation AUC (external_results.csv)
