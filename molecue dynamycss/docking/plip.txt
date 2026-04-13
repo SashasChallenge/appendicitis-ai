@@ -1,0 +1,30 @@
+# 更改氨基酸标签的字体大小和字体ID（PyMOL命令）
+# 设置所有标签的字体大小为20磅
+# 设置标签的字体ID为9
+# 将颜色"smudge"应用于非配体（!lig）且原子名以"C"开头（即碳原子）的部分
+set label_size, 20
+set label_font_id,9
+color smudge, !lig & name C*    
+
+# 选择关键残基并展示labels（鼠标）
+# 选择模式改成residues选择所有关键残基
+
+# 显示蛋白质的卡通图并设置其透明度和颜色（PyMOL命令）
+# 显示卡通结构（如α螺旋、β折叠）
+# 设置卡通结构的透明度为80%（0为完全 opaque，1为完全透明）
+# 设置卡通结构的颜色为"smudge"
+show cartoon
+set cartoon_transparency,0.8
+set cartoon_color,smudge
+
+# 保存高分辨率图像（20x20，300）
+
+# 隐藏标签、恢复卡通结构不透明并缩放视图至合适大小（PyMOL命令）
+# 隐藏所有显示的残基或原子标签
+# 将卡通结构的透明度设置为0（即完全不透明）
+# 缩放视图，使所有可见对象充满画面（或基于当前选择进行缩放）
+hide labels
+set cartoon_transparency,0
+zoom
+
+# 保存高分辨率图像（20x20，300）

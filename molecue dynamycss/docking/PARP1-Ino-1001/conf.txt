@@ -1,0 +1,9 @@
+receptor = 4OPX_S.pdbqt
+
+center_x = -15.17
+center_y = 28.979
+center_z = -33.967
+
+size_x = 100
+size_y = 100
+size_z = 100
